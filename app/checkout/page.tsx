@@ -577,27 +577,7 @@ export default function CheckoutPage() {
                   </div>
 
                   {/* Order Items */}
-                  <div className="mb-6">
-                    <h3 className="font-medium mb-3">Order Items</h3>
-                    <div className="space-y-3">
-                      {cart.map((item) => (
-                        <div key={item.id} className="flex items-center p-3 bg-gray-50 rounded-lg">
-                          <img
-                            src={item.image || "/placeholder.svg?height=60&width=60"}
-                            alt={item.name}
-                            className="w-15 h-15 object-cover rounded mr-4"
-                          />
-                          <div className="flex-1">
-                            <h4 className="font-medium">{item.name}</h4>
-                            <p className="text-sm text-gray-600">
-                              ₹{item.price.toLocaleString("en-IN")} × {item.quantity}
-                            </p>
-                          </div>
-                          <div className="font-semibold">₹{(item.price * item.quantity).toLocaleString("en-IN")}</div>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
+
 
                   <button
                     onClick={handlePlaceOrder}
