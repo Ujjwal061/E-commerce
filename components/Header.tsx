@@ -102,9 +102,9 @@ export default function Header() {
             <Link href="/contact" className="text-gray-700 hover:text-blue-800 font-medium">
               Contact
             </Link>
-            <Link href="/policies" className="text-gray-700 hover:text-blue-800 font-medium">
+            {/* <Link href="/policies" className="text-gray-700 hover:text-blue-800 font-medium">
               Policies
-            </Link>
+            </Link> */}
           </nav>
 
           {/* Right Side Icons */}
